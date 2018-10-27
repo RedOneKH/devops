@@ -31,10 +31,11 @@ public class LoginTest {
     @BeforeClass
     public static void openBrowser() {
         //System.setProperty("webdriver.chrome.driver","E:/chromedriver.exe");
-        //driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver","/Users/mac/Desktop/devOps/chromedriver");
+        driver = new ChromeDriver();
         //System.setProperty("webdriver.gecko.driver", "E:/geckodriver.exe");
-        System.setProperty("webdriver.gecko.driver", "/home/redone/Downloads/geckodriver");
-        driver = new FirefoxDriver();
+        //System.setProperty("webdriver.gecko.driver", "/home/redone/Downloads/geckodriver");
+        //driver = new FirefoxDriver();
         driver.manage().timeouts() .implicitlyWait(10, TimeUnit.SECONDS);
     }
 
